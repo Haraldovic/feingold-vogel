@@ -1,0 +1,13 @@
+.fv-photo-open {
+  position: relative; display: block; text-decoration: none; cursor: zoom-in;
+  color: #fff; background: #454d52;
+}
+.fv-photo-open span { position: absolute; bottom: .7rem; right: .7rem; border: 1px solid #8d9091; padding: .5rem .78rem; background: #161b21ea; color: #fff; font: 600 .75rem/1.3 var(--sans, Arial, sans-serif); }
+.fv-photo-open:hover span { background: #292e36; }
+.fv-modal { width: min(92vw, 67rem); height: min(92svh, 60rem); max-width: 96vw; max-height: 96svh; padding: .8rem; margin: auto; border: 1px solid #555e6b; background: #12171e; color: #fff; }
+.fv-modal[open] { display: grid; gap: .7rem; grid-template-rows: auto minmax(0, 1fr); }
+.fv-modal::backdrop { background: #05080ce6; }
+.fv-modal-bar { display: flex; justify-content: space-between; align-items: center; gap: .8rem; }
+.fv-modal-bar h2 { margin: 0 .4rem; color: #f6f1e6; font: 400 clamp(1.1rem, 2.5vw, 1.8rem)/1.2 var(--serif, Georgia, serif); }
+.fv-modal-bar button { color: #fff; background: transparent; border: 1px solid #7b838c; min-height: 44px; padding: .4rem .8rem; cursor: pointer; font: 600 .81rem/1.3 var(--sans, Arial, sans-serif); }
+.fv-modal img { width: 100%; height: 100%; min-height: 0; object-fit: contain; background: #23292e; }

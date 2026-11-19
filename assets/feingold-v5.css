@@ -1,0 +1,218 @@
+/* One uninterrupted dark field. The renderer provides the only light on the stone. */
+body.feingold {
+  --fv-night: #0a0c10;
+  --fv-shelf: #10141b;
+  --fv-ink: #f7f4ed;
+  --fv-copy: #d4d0c8;
+  --fv-muted: #b8b4a9;
+  --fv-champagne: #f5d78e;
+  --fv-rule: #484133;
+  --fv-width: min(88%, 91rem);
+}
+
+.feingold .fvn-opening {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background: var(--fv-night);
+  color: var(--fv-ink);
+}
+.feingold .fvn-cover {
+  width: var(--fv-width);
+  min-height: min(61rem, calc(100svh - 6.65rem));
+  margin: auto;
+  padding-block: clamp(.1rem,.7vw,.8rem) clamp(2.1rem,3.3vw,4rem);
+  display: grid;
+  grid-template-columns: minmax(0,1.02fr) minmax(0,.98fr);
+  grid-template-areas: "studio studio" "signature caption";
+  align-content: center;
+  align-items: end;
+  gap: clamp(.25rem,.8vw,1rem) clamp(2rem,6vw,7rem);
+}
+.feingold .fvn-studio {
+  grid-area: studio;
+  position: relative;
+  isolation: isolate;
+  justify-self: center;
+  width: min(100%, clamp(31rem,calc(78svh + 3.8vw),62rem));
+  aspect-ratio: 4 / 3;
+  min-width: 0;
+}
+.feingold .fvn-studio > .jewel-stage { width: 100%; height: 100%; margin: 0; background: var(--fv-night); }
+.feingold .fvn-studio .jewel-control {
+  right: max(.6rem,2%);
+  bottom: .3rem;
+  min-height: 42px;
+  max-width: calc(100% - 1.2rem);
+  color: var(--fv-champagne);
+}
+.feingold .fvn-signature { grid-area: signature; min-width: 0; }
+.feingold .fvn-eyeline {
+  display: flex;
+  align-items: center;
+  gap: .8em;
+  font: 600 .76rem/1.45 var(--v-sans,Arial,sans-serif);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: #dfc27c;
+}
+.feingold .fvn-eyeline::before { content: ""; width: 2.25rem; height: 1px; background: #a98742; }
+.feingold .fvn-signature h1 {
+  margin: .06em 0 -.035em -.033em;
+  color: var(--fv-ink);
+  font: 400 clamp(5.7rem,8.35vw,9.6rem)/.96 var(--v-ser,Georgia,serif);
+  letter-spacing: -.051em;
+  text-wrap: initial;
+}
+.feingold .fvn-signature h1 em,
+.feingold .fvn-heading h2 em { color: var(--fv-champagne); font-weight: inherit; }
+.feingold .fvn-caption { grid-area: caption; align-self: end; justify-self: end; max-width: 33rem; }
+.feingold .fvn-caption > p,
+.feingold .fvn-heading > p { color: var(--fv-copy); font: 400 clamp(1.02rem,1.13vw,1.21rem)/1.54 var(--v-sans,Arial,sans-serif); }
+.feingold .fvn-links { display: flex; align-items: center; gap: clamp(1rem,1.8vw,2rem); flex-wrap: wrap; margin-top: 1.22rem; }
+.feingold .fvn-primary, .feingold .fvn-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46px;
+  font: 600 .925rem/1.2 var(--v-sans,Arial,sans-serif);
+}
+.feingold .fvn-primary {
+  justify-content: center;
+  gap: 1.05rem;
+  padding: .78rem 1.18rem;
+  border: 1px solid #c3a05a;
+  border-radius: 2px;
+  background: linear-gradient(110deg,#d2ad5c,#f2d68f 52%,#d3ae58);
+  color: #20180a;
+  text-decoration: none;
+}
+.feingold .fvn-primary:hover { background: #f5d78e; border-color: #f5d78e; }
+.feingold .fvn-primary span, .feingold .fvn-open i { font: 400 1.15em/1 var(--v-sans,Arial,sans-serif); }
+.feingold .fvn-link { color: var(--fv-ink); text-decoration-color: #a98c54; text-underline-offset: .35em; }
+.feingold .fvn-link:hover { color: var(--fv-champagne); }
+.feingold main :is(.fvn-primary,.fvn-link,.fvn-work):focus-visible { outline: 2px solid #f5d78e; outline-offset: 5px; }
+
+/* The three photographs remain visible together, with the archived necklace as the main work. */
+.feingold .fvn-cabinet { background: linear-gradient(165deg,#11151c,#0e1117 65%); color: var(--fv-ink); border-block: 1px solid #32302a; padding-block: clamp(3rem,6.2vw,7rem); }
+.feingold .fvn-wrap { width: var(--fv-width); margin-inline: auto; }
+.feingold .fvn-heading { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(0,.8fr); align-items: end; gap: clamp(2rem,5vw,6rem); margin-bottom: clamp(1.6rem,3.3vw,3.6rem); }
+.feingold .fvn-heading h2 {
+  margin-top: .1em;
+  color: var(--fv-ink);
+  font: 400 clamp(3.3rem,5.9vw,6.45rem)/1.01 var(--v-ser,Georgia,serif);
+  letter-spacing: -.04em;
+}
+.feingold .fvn-heading > p { max-width: 37ch; justify-self: end; padding-bottom: .25rem; }
+.feingold .fvn-gallery {
+  display: grid;
+  grid-template-columns: minmax(0,1.13fr) minmax(0,.87fr);
+  grid-template-rows: repeat(2,minmax(0,1fr));
+  gap: clamp(1rem,2.05vw,2.2rem);
+}
+.feingold .fvn-work {
+  display: grid;
+  min-width: 0;
+  color: var(--fv-ink);
+  text-decoration: none;
+  border: 1px solid #37332c;
+  border-radius: 2px;
+  background: #13171d;
+  overflow: hidden;
+}
+.feingold .fvn-feature { grid-row: span 2; grid-template-rows: minmax(0,1fr) auto; }
+.feingold .fvn-companion { grid-template-columns: minmax(0,.96fr) minmax(0,1.04fr); }
+.feingold .fvn-image { min-width: 0; min-height: 0; overflow: hidden; }
+.feingold .fvn-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.feingold .fvn-feature .fvn-image { aspect-ratio: 1.6; }
+.feingold .fvn-feature .fvn-image img { object-position: 50% 67%; }
+.feingold .fvn-companion .fvn-image img { object-position: center; }
+.feingold .fvn-legend { min-width: 0; padding: clamp(1.05rem,2vw,2.2rem); }
+.feingold .fvn-feature .fvn-legend { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.feingold .fvn-companion .fvn-legend { display: flex; flex-direction: column; justify-content: center; align-items: start; gap: clamp(.8rem,1.7vw,1.8rem); }
+.feingold .fvn-legend h3 { color: var(--fv-ink); font: 400 clamp(1.75rem,2.45vw,3rem)/1.05 var(--v-ser,Georgia,serif); letter-spacing: -.027em; }
+.feingold .fvn-legend p { margin-top: .4rem; color: var(--fv-muted); font-size: .92rem; line-height: 1.42; }
+.feingold .fvn-open { display: inline-flex; gap: .55em; align-items: baseline; color: var(--fv-champagne); font: 550 .84rem/1.3 var(--v-sans,Arial,sans-serif); }
+.feingold .fvn-work:hover .fvn-open { text-decoration: underline; text-underline-offset: .3em; }
+
+.feingold .fvn-talk.band { border-color: #32302a; background: var(--fv-night); }
+.feingold .fvn-talk .photo { border-radius: 2px; }
+.feingold .fvn-talk p, .feingold .fvn-talk .textlink { color: var(--fv-copy); }
+.feingold .fvn-talk .eyebrow { color: var(--fv-champagne); }
+.feingold .fvn-talk h2 { color: var(--fv-ink); }
+
+/* Jewellery pages use a photographic plate and an adjacent, high-contrast object record. */
+.feingold main .folio-intro,
+.feingold main .page-intro:not(.atelier-intro),
+.feingold main .crumbbar { background: var(--fv-night); border-color: var(--fv-rule); }
+.feingold main .folio-intro .eyebrow, .feingold main .page-intro .eyebrow { color: var(--fv-champagne); }
+.feingold main .page-intro .lead { color: var(--fv-copy); }
+.feingold main .page-intro h1 { color: var(--fv-ink); }
+.feingold:is(.page-schmuck,.page-saphirkette) main > .section.wrap.split {
+  width: var(--fv-width);
+  margin-inline: auto;
+  align-items: center;
+  gap: clamp(2rem,5vw,6.5rem);
+  background: transparent;
+}
+.feingold:is(.page-schmuck,.page-saphirkette) .photo img[src$="saphirkette-original.webp"] {
+  height: clamp(24rem,40vw,40rem);
+  width: 100%;
+  border-radius: 2px;
+  background: #60666a;
+  object-fit: contain;
+}
+.feingold:is(.page-schmuck,.page-saphirkette) .photo { border-radius: 2px; }
+.feingold .photo figcaption { color: var(--fv-muted); }
+.feingold .fv-photo-open { border-radius: 2px; background: #60666a; }
+.feingold .fv-photo-open span { background: #0a0c10ed; color: var(--fv-champagne); border-color: #a3864b; border-radius: 2px; }
+.feingold .fv-photo-open:hover span { color: #fff; background: #24201a; }
+.feingold .fv-modal { border-color: #6b5832; background: #10141a; }
+.feingold .fv-modal-bar h2 { color: var(--fv-ink); }
+.feingold .fv-modal-bar button { border-color: #9a7f44; color: var(--fv-champagne); }
+.feingold .photo:has(img[src$="dietmar-im-anzug.webp"]) { background: radial-gradient(ellipse at 45% 42%,#494a49,#242930 75%); }
+
+@media (min-width: 751px) and (max-height: 760px) {
+  .feingold .fvn-studio { width: min(100%,clamp(25rem,74svh,44rem)); }
+  .feingold .fvn-cover { padding-block: .1rem 1.6rem; }
+  .feingold .fvn-signature h1 { font-size: clamp(5rem,7.3vw,7.8rem); }
+}
+@media (max-width: 990px) {
+  .feingold .fvn-gallery { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .feingold .fvn-companion { grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); }
+  .feingold .fvn-legend { padding: 1rem; }
+  .feingold .fvn-legend p { font-size: .85rem; }
+}
+@media (max-width: 750px) {
+  body.feingold { --fv-width: min(90%,38rem); }
+  .feingold .fvn-cover {
+    min-height: 0;
+    padding: .2rem 0 2.6rem;
+    grid-template-columns: minmax(0,1fr);
+    grid-template-areas: "studio" "signature" "caption";
+    gap: 0;
+    align-items: start;
+  }
+  .feingold .fvn-studio { width: min(110.7%,38rem); margin: 0; }
+  .feingold .fvn-studio .jewel-control { bottom: 0; right: 5.25%; }
+  .feingold .fvn-signature { margin-top: clamp(.9rem,2.9vw,1.6rem); }
+  .feingold .fvn-signature h1 { margin-top: .055em; font-size: clamp(4rem,12.4vw,6.9rem); line-height: 1.04; }
+  .feingold .fvn-eyeline { font-size: .75rem; letter-spacing: .115em; }
+  .feingold .fvn-eyeline::before { width: 1.8rem; }
+  .feingold .fvn-caption { justify-self: start; max-width: 38ch; margin-top: .65rem; }
+  .feingold .fvn-caption > p, .feingold .fvn-heading > p { font-size: 1rem; line-height: 1.5; }
+  .feingold .fvn-links { margin-top: 1rem; gap: 1.05rem; }
+  .feingold .fvn-heading { display: block; margin-bottom: 1.55rem; }
+  .feingold .fvn-heading h2 { font-size: clamp(2.8rem,8.8vw,4.4rem); }
+  .feingold .fvn-heading > p { margin-top: .7rem; }
+  .feingold .fvn-gallery { grid-template-columns: minmax(0,1fr); grid-template-rows: auto; }
+  .feingold .fvn-feature { grid-row: auto; }
+  .feingold .fvn-companion { grid-template-columns: minmax(0,.82fr) minmax(0,1.18fr); min-height: 8.8rem; }
+  .feingold .fvn-companion .fvn-legend { gap: .7rem; }
+  .feingold .fvn-legend h3 { font-size: clamp(1.8rem,5.3vw,2.25rem); }
+  .feingold:is(.page-schmuck,.page-saphirkette) main > .section.wrap.split { gap: 1.8rem; }
+  .feingold:is(.page-schmuck,.page-saphirkette) .photo img[src$="saphirkette-original.webp"] { height: clamp(20rem,95vw,31rem); }
+}
+@media (max-width: 355px) {
+  .feingold .fvn-feature .fvn-legend { align-items: start; gap: .6rem; }
+  .feingold .fvn-eyeline { letter-spacing: .065em; }
+}
