@@ -1,0 +1,267 @@
+/* Feingold Vogel — a bright jewellery boutique with a deep green-blue accent. */
+body.feingold.hauslicht {
+  --boutique-green: #174b47;
+  --boutique-ink: #193d39;
+  --boutique-copy: #40534d;
+  --boutique-pearl: #fafaf6;
+  --boutique-mint: #e0eae1;
+  --boutique-brass: #82653b;
+  --v-paper: #fafaf6;
+  --v-ink: var(--boutique-ink);
+  --v-stone: var(--boutique-copy);
+  --v-rule: #cbd7cc;
+  --v-brass: var(--boutique-brass);
+  --v-white: #fffefb;
+  --ink: var(--boutique-ink);
+  --muted: var(--boutique-copy);
+  --link: #25544a;
+  --panel: #eaf1e9;
+  --hair: var(--v-rule);
+  --width: min(90%, 81rem);
+  color: var(--boutique-ink);
+  background: var(--boutique-pearl);
+}
+.feingold .boutique-width { width: var(--width); margin-inline: auto; }
+.feingold .boutique-cover, .feingold .boutique-mast {
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+  max-width: 105rem;
+  background: linear-gradient(115deg, #eef1e6 0%, #e2ece2 60%, #d6e7df 100%);
+}
+.feingold .boutique-cover { min-height: clamp(29.5rem, 39.5vw, 42rem); }
+.feingold .boutique-cover-copy, .feingold .boutique-mast-copy {
+  align-self: center;
+  padding: clamp(2.5rem, 5vw, 5.4rem) clamp(1.8rem, 4vw, 5rem) clamp(2.8rem, 5vw, 5.4rem) max(7.5%, calc((100vw - 81rem)/2));
+}
+@media(min-width:1680px) {
+  .feingold .boutique-cover-copy, .feingold .boutique-mast-copy { padding-left: 7rem; }
+}
+.feingold .boutique-label, .feingold .boutique-mast .eyebrow {
+  display: block;
+  margin: 0 0 1.25rem;
+  font: 650 .81rem/1.55 var(--v-sans);
+  letter-spacing: .095em;
+  text-transform: uppercase;
+  color: #526947;
+}
+.feingold .boutique-mast .eyebrow::before, .feingold main .eyebrow::before { display: none; }
+.feingold .boutique-cover h1, .feingold .boutique-mast h1 {
+  font: 400 clamp(4.25rem, 6.85vw, 7.65rem)/.9 var(--v-ser);
+  color: var(--boutique-ink);
+  letter-spacing: -.05em;
+  margin: 0 0 1.55rem;
+}
+.feingold .boutique-cover h1 em {
+  display: block;
+  font-weight: 400;
+  color: #397168;
+}
+.feingold :is(.boutique-lead, .boutique-mast .lead) {
+  max-width: 38ch;
+  color: var(--boutique-copy);
+  font: 420 clamp(1.025rem, 1.23vw, 1.22rem)/1.6 var(--v-sans);
+}
+.feingold .boutique-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .4rem 1.65rem;
+  margin-top: 1.65rem;
+}
+.feingold .boutique-button, .feingold.hauslicht main :is(.section,.band,.page-intro) a.button:not(.ghost) {
+  display: inline-flex;
+  min-height: 46px;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: .80rem 1.45rem;
+  border: 1px solid var(--boutique-green);
+  border-radius: 100px;
+  background: var(--boutique-green);
+  color: #fffefa;
+  font: 620 .94rem/1.35 var(--v-sans);
+  text-align: center;
+  text-decoration: none;
+  transition: background .18s, border-color .18s;
+}
+.feingold .boutique-button:hover, .feingold.hauslicht main :is(.section,.band,.page-intro) a.button:not(.ghost):hover {
+  background: #26635c;
+  border-color: #26635c;
+}
+.feingold .boutique-link, .feingold main a.textlink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--boutique-green);
+  text-decoration: underline;
+  text-decoration-color: #82a194;
+  text-underline-offset: .26rem;
+  font: 620 .94rem/1.45 var(--v-sans);
+}
+.feingold .boutique-link:hover, .feingold main a.textlink:hover { text-decoration-color: currentColor; }
+.feingold main :is(.button,.textlink)::after { display: none; }
+.feingold :is(.boutique-cover-image,.boutique-mast-image) {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  background: #dbe6df;
+}
+.feingold :is(.boutique-cover-image,.boutique-mast-image) img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.feingold .boutique-categories, .feingold .boutique-portrait, .feingold .boutique-feature-inner {
+  padding-block: clamp(3.4rem, 6.7vw, 7.2rem);
+}
+.feingold :is(.boutique-categories,.boutique-feature,.boutique-portrait,.boutique-cast,.boutique-details) h2 {
+  font: 400 clamp(2.65rem, 4vw, 4.65rem)/1.02 var(--v-ser);
+  letter-spacing: -.04em;
+  color: var(--boutique-ink);
+}
+.feingold .boutique-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+  margin-top: 1.7rem;
+}
+.feingold .boutique-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  border: 1px solid #d5ddd1;
+  border-radius: 1.15rem;
+  overflow: hidden;
+  background: #fffefa;
+  color: var(--boutique-ink);
+  text-decoration: none;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+.feingold .boutique-card:hover { border-color: #94a997; box-shadow: 0 .5rem 1.6rem #28443112; }
+.feingold .boutique-card-photo {
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 1.62; overflow: hidden; background: #dfdfd7;
+}
+.feingold .boutique-card-photo img { width: 100%; height: 100%; object-fit: cover; }
+.feingold .boutique-card-photo.gem { background: #fff; }
+.feingold .boutique-card-photo.gem img { object-fit: contain; }
+.feingold .boutique-card-caption { padding: 1.12rem 1.3rem 1.4rem; }
+.feingold .boutique-card h3 { font: 500 clamp(1.12rem, 1.47vw, 1.53rem)/1.26 var(--v-sans); letter-spacing: -.025em; }
+.feingold .boutique-card-caption p { margin-top: .32rem; color: var(--boutique-copy); font: 420 .95rem/1.48 var(--v-sans); }
+.feingold :is(.boutique-feature-inner,.boutique-portrait) {
+  display: grid;
+  grid-template-columns: minmax(0, .97fr) minmax(0, 1.03fr);
+  gap: clamp(2rem, 7vw, 8rem);
+  align-items: center;
+}
+.feingold .boutique-feature { background: #deebe3; }
+.feingold .boutique-object {
+  aspect-ratio: 1.05;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1.3rem;
+  background: #5e646a;
+}
+.feingold .boutique-object img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 64%; }
+.feingold .boutique-object figcaption {
+  position: absolute;
+  bottom: .9rem;
+  left: .9rem;
+  color: #fff;
+  background: #22352fd9;
+  padding: .38rem .8rem;
+  border-radius: 2rem;
+  font: 520 .77rem/1.35 var(--v-sans);
+}
+.feingold :is(.boutique-feature-copy,.boutique-portrait,.boutique-cast) h2+p { margin-top: 1rem; color: var(--boutique-copy); }
+.feingold .boutique-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding-block: 1.3rem;
+  margin-block: 1.3rem;
+  border-block: 1px solid #b8c9bb;
+}
+.feingold .boutique-specs dt { font: 450 .82rem/1.4 var(--v-sans); color: var(--boutique-copy); }
+.feingold .boutique-specs dd { margin: .2rem 0 0; font: 620 1rem/1.45 var(--v-sans); }
+.feingold .boutique-portrait { grid-template-columns: minmax(0,.72fr) minmax(0,1.28fr); }
+.feingold .boutique-portrait figure {
+  background: linear-gradient(145deg,#e1decf,#c0cdbf);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.feingold .boutique-portrait img { width: 100%; max-height: 26rem; object-fit: contain; object-position: center bottom; }
+.feingold .boutique-cast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background: #eaf0e6;
+  border-radius: 1.25rem;
+  padding: clamp(1.5rem, 4vw, 4rem);
+  margin-bottom: clamp(3rem, 5vw, 5.5rem);
+}
+.feingold .boutique-cast .boutique-button { flex: none; }
+.feingold .boutique-cast .boutique-label { margin-bottom: .65rem; }
+.feingold .boutique-cast p { max-width: 53ch; }
+.feingold .boutique-mast { width: var(--width); margin: .9rem auto 0; border-radius: 1.35rem; overflow: hidden; min-height: clamp(23rem, 31.5vw, 32rem); }
+.feingold .boutique-mast-copy { padding: clamp(2rem, 4.4vw, 5rem); }
+.feingold .boutique-mast h1 { font-size: clamp(3.6rem, 5.55vw, 6rem); overflow-wrap: anywhere; }
+.feingold .page-intro .lead { max-width: 56ch; }
+.feingold.page-dietmar .boutique-mast-image { background: linear-gradient(120deg,#d9dfcd,#b3c8bc); }
+.feingold.page-dietmar .boutique-mast-image img { object-fit: contain; object-position: center bottom; }
+.feingold.page-goldgezwitscher .boutique-mast-image { background: #233a39; }
+.feingold.page-goldgezwitscher .boutique-mast-image img { width: min(100%, 24rem); inset-inline: 0; margin: auto; object-position: center 30%; }
+.feingold.page-edelsteine .boutique-mast-image { background: #fff; }
+.feingold.page-edelsteine .boutique-mast-image img { object-fit: contain; }
+.feingold.page-saphirkette .boutique-mast-image img { object-position: 50% 65%; }
+.feingold .boutique-details { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: clamp(2rem, 6vw, 7rem); }
+.feingold .boutique-details h2 { margin-top: .4rem; }
+.feingold main .section .photo, .feingold main .section .card { border-radius: 1.05rem; }
+.feingold .section .original-product img { background: #616769; height: clamp(18rem,34vw,33rem); object-fit: cover; object-position: 50% 64%; }
+.feingold .section .original-product figcaption { margin: 0; padding: .65rem .9rem; background: #e8eee6; }
+.feingold main .band { background: #edf2e9; border: 0; }
+.feingold main .steps { gap: 1.2rem; }
+.feingold main .steps li { border: 0; padding: 1.6rem; border-radius: 1rem; background: var(--v-white); }
+.feingold main .table-wrap { border-radius: .8rem; overflow: auto; border-color: var(--hair); }
+.feingold main .table-wrap :is(td,th) { border-color: var(--hair); }
+.feingold:not(.page-atlas) .page-intro { border-bottom: 0; }
+.feingold:not(.page-atlas) :is(.page-intro,.crumbbar+.page-intro) .wrap { padding-block: clamp(2.5rem,5vw,5rem); }
+.feingold:not(.page-atlas) .page-intro h1 { font-size: clamp(3rem,5.3vw,5.2rem); }
+.feingold.page-kontakt .page-intro { background: #e4eee5; }
+.feingold main .dv-atlas-call a { border-radius: 2rem; }
+@media(max-width:960px) and (min-width:721px) {
+  .feingold .boutique-cover h1 { font-size: clamp(3.65rem, 7.4vw, 4.8rem); }
+  .feingold .boutique-cover-copy { padding-inline: 8% 6%; }
+  .feingold .boutique-mast-copy { padding-inline: 1.75rem; }
+  .feingold .boutique-mast h1 { font-size: clamp(3.2rem,6.3vw,4.4rem); }
+}
+@media(max-width:720px) {
+  .feingold .boutique-cover,.feingold .boutique-mast { display: flex; flex-direction: column; min-height: 0; }
+  .feingold .boutique-cover-copy { width: 100%; padding: 2.2rem 5% 2rem; }
+  .feingold .boutique-cover h1 { font-size: clamp(3.05rem, 10.6vw, 4.8rem); margin-bottom: .9rem; line-height: .99; }
+  .feingold .boutique-cover h1 em { display: inline; }
+  .feingold .boutique-label,.feingold .boutique-mast .eyebrow { margin-bottom: .7rem; }
+  .feingold .boutique-actions { margin-top: 1rem; gap: .2rem 1rem; }
+  .feingold .boutique-cover-image { aspect-ratio: 1.55; }
+  .feingold :is(.boutique-feature-inner,.boutique-portrait,.boutique-details) { grid-template-columns: minmax(0,1fr); gap: 1.6rem; }
+  .feingold .boutique-grid { gap: 1rem; grid-template-columns: minmax(0,1fr); }
+  .feingold .boutique-card { grid-template: auto / minmax(0,.8fr) minmax(0,1.2fr); align-items: stretch; }
+  .feingold .boutique-card-photo { height: 100%; min-height: 7rem; aspect-ratio: auto; }
+  .feingold .boutique-card-photo img { max-height: 9rem; }
+  .feingold .boutique-card-caption { padding: .9rem; align-self: center; }
+  .feingold .boutique-card-caption p { font-size: .89rem; }
+  .feingold .boutique-specs { gap: .9rem 1.3rem; }
+  .feingold .boutique-portrait figure { width: min(100%,24rem); }
+  .feingold .boutique-cast { align-items: flex-start; flex-direction: column; gap: 1.3rem; }
+  .feingold .boutique-mast-copy { width: 100%; padding: 1.8rem 1.35rem; }
+  .feingold .boutique-mast h1 { font-size: clamp(2.9rem, 9.8vw, 4.6rem); margin-bottom: .72rem; }
+  .feingold .boutique-mast-image { aspect-ratio: 1.58; }
+}
+@media(prefers-reduced-motion:reduce){
+  .feingold .boutique-card,.feingold .boutique-button { transition: none; }
+}

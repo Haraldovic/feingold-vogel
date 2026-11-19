@@ -4,7 +4,7 @@ Entpacke das ZIP und öffne `index.html` im Browser. Von dort erreichst du die S
 
 ## Gestaltung und Bedienung
 
-Die Lupe auf der Startseite zeigt die Katalogaufnahme der Saphirkette im Detail. Der Edelsteinatlas vergleicht Farbe, Reinheit und Karatgewicht und führt die Merkmale von Farbedelsteinen auf.
+Die Schmuckvorschau und die Detailseite zeigen das Originalfoto der Saphirkette. Auf der Startseite führt die Schaltfläche „Schmuck entdecken“ in die Vorschau. Der Edelsteinatlas vergleicht Farbe, Reinheit und Karatgewicht und führt die Merkmale von Farbedelsteinen auf.
 
 ## Vorschau auf GitHub Pages
 
