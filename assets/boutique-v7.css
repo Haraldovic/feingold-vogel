@@ -77,7 +77,7 @@ body.feingold.hauslicht {
   justify-content: center;
   padding: .80rem 1.45rem;
   border: 1px solid var(--boutique-green);
-  border-radius: 100px;
+  border-radius: 0;
   background: var(--boutique-green);
   color: #fffefa;
   font: 620 .94rem/1.35 var(--v-sans);
@@ -134,7 +134,7 @@ body.feingold.hauslicht {
   grid-template-rows: auto 1fr;
   min-width: 0;
   border: 1px solid #d5ddd1;
-  border-radius: 1.15rem;
+  border-radius: 0;
   overflow: hidden;
   background: #fffefa;
   color: var(--boutique-ink);
@@ -163,7 +163,7 @@ body.feingold.hauslicht {
   aspect-ratio: 1.05;
   overflow: hidden;
   position: relative;
-  border-radius: 1.3rem;
+  border-radius: 0;
   background: #5e646a;
 }
 .feingold .boutique-object img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 64%; }
@@ -174,7 +174,7 @@ body.feingold.hauslicht {
   color: #fff;
   background: #22352fd9;
   padding: .38rem .8rem;
-  border-radius: 2rem;
+  border-radius: 0;
   font: 520 .77rem/1.35 var(--v-sans);
 }
 .feingold :is(.boutique-feature-copy,.boutique-portrait,.boutique-cast) h2+p { margin-top: 1rem; color: var(--boutique-copy); }
@@ -191,7 +191,7 @@ body.feingold.hauslicht {
 .feingold .boutique-portrait { grid-template-columns: minmax(0,.72fr) minmax(0,1.28fr); }
 .feingold .boutique-portrait figure {
   background: linear-gradient(145deg,#e1decf,#c0cdbf);
-  border-radius: 1.25rem;
+  border-radius: 0;
   overflow: hidden;
 }
 .feingold .boutique-portrait img { width: 100%; max-height: 26rem; object-fit: contain; object-position: center bottom; }
@@ -201,14 +201,14 @@ body.feingold.hauslicht {
   align-items: center;
   gap: 2rem;
   background: #eaf0e6;
-  border-radius: 1.25rem;
+  border-radius: 0;
   padding: clamp(1.5rem, 4vw, 4rem);
   margin-bottom: clamp(3rem, 5vw, 5.5rem);
 }
 .feingold .boutique-cast .boutique-button { flex: none; }
 .feingold .boutique-cast .boutique-label { margin-bottom: .65rem; }
 .feingold .boutique-cast p { max-width: 53ch; }
-.feingold .boutique-mast { width: var(--width); margin: .9rem auto 0; border-radius: 1.35rem; overflow: hidden; min-height: clamp(23rem, 31.5vw, 32rem); }
+.feingold .boutique-mast { width: var(--width); margin: .9rem auto 0; border-radius: 0; overflow: hidden; min-height: clamp(23rem, 31.5vw, 32rem); }
 .feingold .boutique-mast-copy { padding: clamp(2rem, 4.4vw, 5rem); }
 .feingold .boutique-mast h1 { font-size: clamp(3.6rem, 5.55vw, 6rem); overflow-wrap: anywhere; }
 .feingold .page-intro .lead { max-width: 56ch; }
@@ -221,19 +221,19 @@ body.feingold.hauslicht {
 .feingold.page-saphirkette .boutique-mast-image img { object-position: 50% 65%; }
 .feingold .boutique-details { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: clamp(2rem, 6vw, 7rem); }
 .feingold .boutique-details h2 { margin-top: .4rem; }
-.feingold main .section .photo, .feingold main .section .card { border-radius: 1.05rem; }
+.feingold main .section .photo, .feingold main .section .card { border-radius: 0; }
 .feingold .section .original-product img { background: #616769; height: clamp(18rem,34vw,33rem); object-fit: cover; object-position: 50% 64%; }
 .feingold .section .original-product figcaption { margin: 0; padding: .65rem .9rem; background: #e8eee6; }
 .feingold main .band { background: #edf2e9; border: 0; }
 .feingold main .steps { gap: 1.2rem; }
-.feingold main .steps li { border: 0; padding: 1.6rem; border-radius: 1rem; background: var(--v-white); }
-.feingold main .table-wrap { border-radius: .8rem; overflow: auto; border-color: var(--hair); }
+.feingold main .steps li { border: 0; padding: 1.6rem; border-radius: 0; background: var(--v-white); }
+.feingold main .table-wrap { border-radius: 0; overflow: auto; border-color: var(--hair); }
 .feingold main .table-wrap :is(td,th) { border-color: var(--hair); }
 .feingold:not(.page-atlas) .page-intro { border-bottom: 0; }
 .feingold:not(.page-atlas) :is(.page-intro,.crumbbar+.page-intro) .wrap { padding-block: clamp(2.5rem,5vw,5rem); }
 .feingold:not(.page-atlas) .page-intro h1 { font-size: clamp(3rem,5.3vw,5.2rem); }
 .feingold.page-kontakt .page-intro { background: #e4eee5; }
-.feingold main .dv-atlas-call a { border-radius: 2rem; }
+.feingold main .dv-atlas-call a { border-radius: 0; }
 @media(max-width:960px) and (min-width:721px) {
   .feingold .boutique-cover h1 { font-size: clamp(3.65rem, 7.4vw, 4.8rem); }
   .feingold .boutique-cover-copy { padding-inline: 8% 6%; }
