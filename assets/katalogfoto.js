@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   function enableOriginalPhoto(photo) {
-    const source = photo.getAttribute('src');
+    const source = photo.dataset.fvDetail || photo.getAttribute('src');
     const trigger = document.createElement('a');
     trigger.href = source;
     trigger.className = 'fv-photo-open';

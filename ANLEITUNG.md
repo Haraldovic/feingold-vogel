@@ -4,7 +4,7 @@ Entpacke das ZIP und öffne `index.html` im Browser. Von dort erreichst du die S
 
 ## Gestaltung und Bedienung
 
-Der Smaragd im achteckigen Stufenschliff eröffnet die Seite. Vom Schmuckkabinett gelangen Sie zur Saphirkette, zum Edelsteinatlas und zu den Edelmetallen. Bei aktivierter Bewegungsreduktion startet die Schliffstudie mit einem Standbild.
+Die Lupe auf der Startseite zeigt die Katalogaufnahme der Saphirkette im Detail. Der Edelsteinatlas vergleicht Farbe, Reinheit und Karatgewicht und führt die Merkmale von Farbedelsteinen auf.
 
 ## Vorschau auf GitHub Pages
 

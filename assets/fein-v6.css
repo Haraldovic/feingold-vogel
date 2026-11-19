@@ -1,0 +1,132 @@
+/* Feingold Vogel: the photograph is the exhibit, its metal context is the frame. */
+body.feingold {
+  --fvpaper:#f8f6f1; --fvwhite:#fffefa; --fvink:#203949;
+  --fvcopy:#42545d; --fvbrass:#785d33; --fvrule:#d4d0c4;
+  --fvser:var(--v-ser,"Cormorant Garamond",Georgia,serif);
+  --fvsans:var(--v-sans,"DM Sans",Arial,sans-serif);
+  --fvwide:min(89%,82rem);
+  --paper:var(--fvpaper);--ink:var(--fvink);--muted:var(--fvcopy);--link:var(--fvbrass);--hair:var(--fvrule);
+  --panel:#efeee8;--gold:#82663a;--forest:var(--fvink);
+}
+.feingold .fv6-width {width:var(--fvwide);margin-inline:auto;}
+.feingold .fv6-intro {background:var(--fvpaper);color:var(--fvink);border-bottom:1px solid var(--fvrule);}
+.feingold .fv6-cover {display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.12fr);grid-template-areas:"title photo" "deck photo";gap:0 clamp(2.45rem,6.6vw,6.7rem);padding-block:clamp(2.15rem,4.6vw,5.1rem) clamp(2.4rem,4.3vw,4.7rem);align-content:center;}
+.feingold .fv6-cover-title {grid-area:title;align-self:end;min-width:0;}
+.feingold .fv6-kicker {display:flex;align-items:center;gap:.65rem;color:var(--fvbrass);font:600 .78rem/1.4 var(--fvsans);letter-spacing:.12em;text-transform:uppercase;margin:0;}
+.feingold .fv6-kicker::before {content:"";width:2.05rem;height:1px;background:#9c814e;flex:none;}
+.feingold .fv6-cover h1, .feingold :is(.fv6-record,.fv6-cabinet,.fv6-host,.fv6-cast) h2 {color:var(--fvink);font:400 clamp(3.25rem,5.6vw,6.55rem)/.99 var(--fvser);letter-spacing:-.046em;}
+.feingold .fv6-cover h1 {font-size:clamp(4.7rem,8.5vw,8.8rem);margin:.16em 0 .22em;}
+.feingold .fv6-cover h1 em {display:block;color:#3e5666;font-weight:400;letter-spacing:-.05em;}
+.feingold .fv6-deck {grid-area:deck;align-self:start;padding-bottom:.4rem;}
+.feingold .fv6-deck>p, .feingold :is(.fv6-record,.fv6-host,.fv6-cast) p:not(.fv6-kicker) {font:400 clamp(1rem,1.15vw,1.19rem)/1.63 var(--fvsans);color:var(--fvcopy);max-width:42ch;margin:0;}
+.feingold .fv6-actions {display:flex;align-items:center;gap:.5rem 1.4rem;flex-wrap:wrap;margin-top:1.55rem;}
+.feingold .fv6-primary, .feingold .fv6-text {display:inline-flex;align-items:center;justify-content:center;min-height:45px;font:550 .94rem/1.35 var(--fvsans);}
+.feingold .fv6-primary {background:var(--fvink);border:1px solid var(--fvink);color:#fffdf6;padding:.71rem 1.1rem;text-decoration:none;}
+.feingold .fv6-primary:hover {background:#344f5e;}
+.feingold .fv6-text {color:var(--fvink);text-decoration:underline;text-decoration-color:#9d895f;text-underline-offset:.31em;}
+.feingold .fv6-text:hover {text-decoration-color:currentColor;}
+.feingold .fv6-plate {grid-area:photo;margin:0;min-width:0;align-self:center;}
+.feingold .fv6-frame {position:relative;isolation:isolate;overflow:hidden;background:#767b7e;aspect-ratio:1.26;}
+.feingold .fv6-frame:focus-visible {outline:3px solid #866936;outline-offset:4px;}
+.feingold .fv6-frame.fv6-enabled {cursor:crosshair;}
+.feingold .fv6-source {display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 67%;}
+.feingold .fv6-lens {
+  position:absolute; top:0;left:0;z-index:2;pointer-events:none;display:block;
+  width:clamp(108px,14.8vw,205px);aspect-ratio:1;border-radius:50%;overflow:hidden;
+  border:2px solid #fcf6e7;background-repeat:no-repeat;background-color:#90989c;
+  box-shadow:0 0 0 1px #766943,0 .16rem .65rem #11263545;
+}
+.feingold .fv6-origin {position:absolute;top:0;left:0;pointer-events:none;z-index:1;width:15px;height:15px;border:1px solid #fff8df;border-radius:50%;box-shadow:0 0 0 1px #31454a88;}
+.feingold .fv6-origin[hidden], .feingold .fv6-lens[hidden], .feingold .fv6-instruments[hidden] {display:none!important;}
+.feingold .fv6-caption {display:flex;align-items:baseline;justify-content:space-between;gap:.4rem .8rem;margin:.56rem 0 0;color:var(--fvcopy);font:500 .84rem/1.4 var(--fvsans);}
+.feingold .fv6-caption a {color:#4d5d65;font-size:.81rem;font-weight:400;text-underline-offset:.23em;}
+.feingold .fv6-instruments {display:flex;align-items:center;justify-content:space-between;gap:.3rem .8rem;flex-wrap:wrap;border-bottom:1px solid var(--fvrule);border-top:1px solid var(--fvrule);padding:.18rem 0;margin-top:.78rem;}
+.feingold .fv6-instruments button {position:relative;min-height:42px;padding:.25rem .2rem;background:transparent;border:0;color:var(--fvcopy);cursor:pointer;font:500 .84rem/1.25 var(--fvsans);}
+.feingold .fv6-instruments button:focus-visible {outline:2px solid #866936;outline-offset:1px;}
+.feingold .fv6-points {display:flex;gap:clamp(.38rem,1vw,.94rem);flex-wrap:wrap;}
+.feingold .fv6-points button[aria-pressed="true"] {font-weight:650;color:var(--fvink);text-decoration:underline;text-decoration-color:#9d824f;text-underline-offset:.37em;}
+.feingold button.fv6-switch {display:flex;gap:.6rem;align-items:center;color:var(--fvink);font-weight:600;white-space:nowrap;}
+.feingold .fv6-switch::before {content:"";display:block;width:1.75rem;height:1rem;border:1px solid #78868a;border-radius:1rem;background:#f5f5ef;}
+.feingold .fv6-switch::after {content:"";position:absolute;left:.39rem;width:.6rem;height:.6rem;border-radius:50%;background:#67767b;}
+.feingold .fv6-switch[aria-pressed="true"]::before {background:var(--fvink);border-color:var(--fvink);}
+.feingold .fv6-switch[aria-pressed="true"]::after {left:1.14rem;background:#fff9e9;}
+.feingold .fv6-sr {position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%);white-space:nowrap;}
+.feingold .fv6-record {background:var(--fvwhite);color:var(--fvink);border-bottom:1px solid var(--fvrule);}
+.feingold .fv6-record-inner {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,7vw,7rem);padding-block:clamp(3.1rem,5.5vw,6rem);align-items:center;}
+.feingold .fv6-record h2, .feingold .fv6-host h2 {font-size:clamp(2.9rem,4.55vw,5.55rem);margin:.15em 0 .25em;}
+.feingold .fv6-data {margin:0;border-top:1px solid #a9a493;}
+.feingold .fv6-data>div {display:grid;grid-template-columns:1fr 1.22fr;gap:.6rem 1rem;padding:.78rem 0;border-bottom:1px solid var(--fvrule);font:400 .96rem/1.35 var(--fvsans);}
+.feingold .fv6-data dt {color:var(--fvcopy);}
+.feingold .fv6-data dd {margin:0;color:var(--fvink);font-weight:580;}
+.feingold .fv6-cabinet {padding-block:clamp(3.3rem,6vw,6.5rem);}
+.feingold .fv6-section-heading {display:flex;align-items:end;gap:1rem 2rem;justify-content:space-between;flex-wrap:wrap;margin-bottom:clamp(1.1rem,2.5vw,2.5rem);}
+.feingold .fv6-section-heading h2 {margin:.15em 0 0;}
+.feingold .fv6-objects {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.9rem,2.25vw,2.2rem);}
+.feingold .fv6-objects article {min-width:0;}
+.feingold .fv6-work {height:100%;display:block;color:var(--fvink);text-decoration:none;}
+.feingold .fv6-work-photo {margin:0;aspect-ratio:1.4;background:#eceae3;overflow:hidden;}
+.feingold .fv6-work-photo img {height:100%;width:100%;object-fit:cover;}
+.feingold .fv6-work>div {padding:.82rem 0 1.15rem;border-bottom:1px solid #bfb9aa;}
+.feingold .fv6-work h3 {color:var(--fvink);font:400 clamp(1.95rem,2.6vw,3.3rem)/1.05 var(--fvser);letter-spacing:-.034em;}
+.feingold .fv6-work:hover h3,.feingold .fv6-work:focus-visible h3 {text-decoration:underline;text-underline-offset:.17em;text-decoration-thickness:1px;text-decoration-color:#9c8253;}
+.feingold .fv6-work p {color:var(--fvcopy);font:400 .93rem/1.5 var(--fvsans);margin-top:.46rem;}
+.feingold .fv6-host {background:#efeee8;color:var(--fvink);border-block:1px solid var(--fvrule);}
+.feingold .fv6-host-inner {display:grid;grid-template-columns:minmax(0,.84fr) minmax(0,1fr);gap:clamp(2.5rem,8vw,8rem);align-items:center;padding-block:clamp(2.8rem,5vw,6rem);}
+.feingold .fv6-portrait {margin:0;display:flex;justify-content:center;align-items:end;overflow:hidden;background:#dddfdc;}
+.feingold .fv6-portrait img {width:auto;max-width:100%;height:auto;max-height:26rem;object-fit:contain;}
+.feingold .fv6-cast {display:flex;align-items:center;justify-content:space-between;gap:1rem 3rem;padding-block:clamp(3.2rem,5.5vw,6rem);}
+.feingold .fv6-cast h2 {font-size:clamp(2.7rem,4.6vw,5rem);margin:.12em 0 .25em;}
+.feingold .fv6-cast p:not(.fv6-kicker) {max-width:53ch;}
+/* Preserve the individual catalogue records and their original incident-light photos. */
+body.feingold:not(.page-atlas) main {background:var(--fvpaper);color:var(--fvink);}
+body.feingold main :is(.crumbbar,.page-intro,.folio-intro) {background:var(--fvpaper);border-color:var(--fvrule);}
+body.feingold main .crumbs,body.feingold main .page-intro .lead {color:var(--fvcopy);}
+body.feingold main :is(.page-intro,.section) .eyebrow {color:var(--fvbrass);}
+body.feingold main .page-intro h1,body.feingold main :is(.section,.band) :is(h2,h3) {color:var(--fvink);}
+body.feingold main .band {background:#eeeee7;border-color:var(--fvrule);}
+body.feingold main :is(.section,.band) p:not(.eyebrow) {color:var(--fvcopy);}
+body.feingold main .section .card {background:var(--fvwhite);color:var(--fvink);border:1px solid var(--fvrule);border-radius:0;}
+body.feingold main :is(.section,.band) a.button {background:var(--fvink);border:1px solid var(--fvink);color:#fffdf6;border-radius:0;}
+body.feingold main :is(.section,.band) a.button:hover {background:#354f60;}
+body.feingold main :is(.section,.band) .textlink,body.feingold main .dv-atlas-call a {color:var(--fvink);text-decoration-color:#967e50;}
+body.feingold main .dv-atlas-call {color:var(--fvink);border-color:var(--fvrule);}
+body.feingold main .dv-atlas-call a {background:var(--fvwhite);border-color:#9c9278;border-radius:0;}
+body.feingold main .photo {border-radius:0;}
+body.feingold main .photo:has(img[src$="dietmar-im-anzug.webp"]){background:#e2e3dc;}
+body.feingold .photo figcaption {color:var(--fvcopy);background:var(--fvpaper);}
+body.feingold .fv-photo-open span {background:#faf8f1ef;color:var(--fvink);border-color:#b6ae9c;}
+body.feingold .fv-modal,body.feingold .fv-modal img {background:#f1f0e9;color:var(--fvink);border-color:#ada99c;}
+body.feingold .fv-modal-bar h2,body.feingold .fv-modal-bar button {color:var(--fvink);border-color:#89908e;}
+body.feingold .fv-modal::backdrop {background:#1a2c348a;}
+body.feingold main .table-wrap {border-color:#aca793;}
+body.feingold main .table-wrap :is(td,th) {border-color:var(--fvrule);color:var(--fvink);}
+@media (max-width:870px){
+  .feingold .fv6-cover{column-gap:1.8rem;grid-template-columns:minmax(0,.83fr) minmax(0,1.05fr);}
+  .feingold .fv6-cover h1{font-size:clamp(3.8rem,8vw,6.4rem);}
+  .feingold .fv6-frame{aspect-ratio:1.02;}
+}
+@media(max-width:680px){
+  body.feingold{--fvwide:90%;}
+  .feingold .fv6-cover{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "photo" "deck";padding-block:1.7rem 2.6rem;}
+  .feingold .fv6-cover h1{font-size:clamp(3.15rem,10.9vw,5rem);margin:.15em 0 .22em;}
+  .feingold .fv6-cover h1 em{display:inline;}
+  .feingold .fv6-frame{aspect-ratio:1.38;}
+  .feingold .fv6-caption{margin-top:.4rem;}
+  .feingold .fv6-instruments{margin-top:.52rem;}
+  .feingold .fv6-deck{padding:1rem 0 0;}
+  .feingold .fv6-actions{gap:.4rem 1.1rem;margin-top:.9rem;}
+  .feingold .fv6-host-inner,.feingold .fv6-record-inner{grid-template-columns:1fr;gap:1.25rem;padding-block:2.6rem;}
+  .feingold .fv6-data>div{grid-template-columns:.85fr 1.15fr;}
+  .feingold .fv6-cabinet{padding-block:2.9rem;}
+  .feingold .fv6-objects{grid-template-columns:1fr;gap:.75rem;}
+  .feingold .fv6-work{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);align-items:stretch;}
+  .feingold .fv6-work-photo{height:100%;aspect-ratio:auto;min-height:6.9rem;}
+  .feingold .fv6-work>div{padding:.6rem 0 .7rem .85rem;}
+  .feingold .fv6-work h3{font-size:clamp(1.65rem,5.9vw,2.4rem);}
+  .feingold .fv6-work p{font-size:.88rem;}
+  .feingold .fv6-portrait{max-width:28rem;}
+  .feingold .fv6-portrait img{max-height:21rem;}
+  .feingold .fv6-cast{align-items:start;flex-direction:column;padding-block:2.65rem;}
+}
+@media(max-width:345px){.feingold .fv6-points{gap:.3rem;}.feingold .fv6-instruments{gap:.2rem;}.feingold .fv6-points button,.feingold button.fv6-switch{font-size:.76rem;}}
+@media print{.feingold :is(.fv6-lens,.fv6-origin,.fv6-instruments){display:none!important;}}
