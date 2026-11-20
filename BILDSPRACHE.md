@@ -1,12 +1,12 @@
 # Bildsprache und Umsetzung – 20. November 2026
 
-Die drei Websites behalten ihre eigenen Schwerpunkte: Schmuckobjekte und Details bei Feingold Vogel, persönlicher Ankauf und Orientierung bei Nachlassgold, Gastgeber und geplante Gespräche bei Goldgezwitscher. Vogelzeichen, Logo-Unterzeilen, Schriftfamilien und Markenwechsel verbinden sie. Die jeweiligen Unterzeilen behalten ihren eigenen Text.
+Die drei Websites behalten ihre eigenen Schwerpunkte: Markeneinstieg und Schmuckthemen bei Feingold Vogel, persönlicher Ankauf und Orientierung bei Nachlassgold, Gastgeber und geplante Gespräche bei Goldgezwitscher. Vogelzeichen, Logo-Unterzeilen, Schriftfamilien und Markenwechsel verbinden sie. Die jeweiligen Unterzeilen behalten ihren eigenen Text.
 
 ## Fotografien
 
 - `assets/dietmar-portrait-v13-1120.webp` und `-640.webp`: Hintergrundbearbeitung des vorhandenen Dietmar-Porträts im Anzug. Heller Steinfarbton, natürliche Struktur, bereinigter Freistellrand. Bildbearbeitung mit dem eingebauten Bildwerkzeug; lokale Exporte lediglich skaliert und als WebP komprimiert.
 - `assets/dietmar-mikrofon-v13-1120.webp` und `-640.webp` (Feingold Vogel und Goldgezwitscher): vorhandenes Mikrofonporträt mit warmem, zurückgenommenem Hintergrund; das Blatt oben rechts entfernt. Keine erfundene Studioeinrichtung.
-- Saphirkette: unveränderte echte Produktaufnahmen aus dem Kundenkatalog. Kein generativ veränderter Stein, keine ergänzte Fassung, keine erfundenen Produkte. Der mobile Hero verwendet einen verkleinerten WebP-Export. Der Ausschnitt wird im Layout gewählt.
+- Saphirkette: unveränderte echte Produktaufnahmen aus dem Kundenkatalog. Kein generativ veränderter Stein, keine ergänzte Fassung, keine erfundenen Produkte. Die Produktseite bleibt als Anschauungsbeispiel unter der bestehenden URL erhalten. Auf der Startseite und der Schmuckübersicht wird sie nicht als aktuelles Angebot präsentiert.
 - Goldbarren: vorhandene lizenzierte Aufnahme von Scottsdale Mint. Die einzelnen Edelsteinaufnahmen behalten die vorhandenen Quellen und Lizenzhinweise.
 
 Die neuen Porträtdateien wurden mit image_gen als Bearbeitungen erstellt. Bestehende Originaldateien bleiben erhalten. Die Hintergründe sind Bearbeitungen und belegen keine tatsächlichen Geschäftsräume. Öffentliche Bildnachweise nennen die Bearbeitung.
@@ -28,3 +28,16 @@ Goldgezwitscher ist ausdrücklich ein Vorab-Auftritt: keine erfundenen Folgen, G
 Die laufenden Vorschau-Domains, Suchmaschinen-Sperre und vorhandenen Rechtstexte bleiben bestehen. Vor dem Umzug werden endgültige Domains, Hostinger-Vertrag, tatsächliche Kontaktverarbeitung, Bildfreigaben und Rechtstexte für den echten Betrieb gemeinsam finalisiert. Die statischen Kontaktformulare öffnen derzeit einen E-Mail-Entwurf.
 
 Nachlassgold: Vorbereitung des privaten Hostinger-Kursdiensts unter `hosting/hostinger/`. Einrichtung und erster echter API-Lauf benötigen den vorgesehenen Hostinger-Webspace und einen Metals.Dev-Schlüssel. Der Schlüssel gehört weder ins Repository noch in den Browser. Die aktuelle Vorschau kennzeichnet weiterhin NBP-Referenz und Archivwerte korrekt.
+
+
+## Revision 15 – Markenauftritt vor Shopstart
+
+Die Startseite führt mit einem Einleitungstext in Feingold Vogel ein. Hero und Themenbilder illustrieren die Marke; sie behaupten keine Verfügbarkeit der gezeigten Schmuckstücke. Der zukünftige Bestand mit konkreten Produktdaten und Preisen erscheint erst mit dem Shopstart. Die Schmuckübersicht beschreibt Materialien und Beratung. Die Originalseite zur Saphirkette bleibt als Anschauungsbeispiel erhalten, wird aber nicht mehr in der Hauptpräsentation oder im Footer beworben.
+
+Neue reale Fotografien unter der Pexels-Lizenz, abgerufen am 20.11.2026:
+
+- Ron Lach: https://www.pexels.com/photo/a-woman-with-gold-necklaces-9489731/ (4160 × 6240). Lokale responsive Exporte: `assets/gold-getragen-v15-640.webp`, `-1280.webp`, `-1800.webp`. Schmuck getragen zu einer hellen Bluse, Ausschnitt über CSS.
+- Castorly Stock: https://www.pexels.com/photo/gold-and-diamond-jewelry-3641059/ (6000 × 4000). Exporte: `assets/schmuck-seide-v15-640.webp`, `-960.webp`, `-1600.webp`.
+- Lizenz: https://www.pexels.com/license/ . Freie Website- und Werbenutzung; Attribution nicht vorgeschrieben. Fotografen und Quellen werden dennoch unter `bildnachweise.html` genannt. Keine Empfehlung durch die abgebildeten Personen oder Anbieter wird behauptet.
+
+Keine generative Änderung dieser Schmuckfotos. Nur Skalierung und WebP-Kompression. Kein Abruf von Pexels beim Laden der Website; sämtliche Fotodateien sind lokal. Die bestehende Markenleiste und die unterschiedlichen Logo-Unterzeilen bleiben unverändert. Der Schmuckeinstieg enthält keinen Produktpreis, keine Verfügbarkeitsaussage und keinen Kaufen-Button.
