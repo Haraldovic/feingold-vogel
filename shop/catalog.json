@@ -1,0 +1,406 @@
+{
+  "products": [
+    {
+      "id": "fv-demo-001",
+      "slug": "ring-blauer-stein",
+      "name": "Ring mit blauem Stein",
+      "category": "Ringe",
+      "priceCents": 149000,
+      "material": "Gelbgold",
+      "gemstone": "Blauer Stein",
+      "description": "Ein tiefblauer Mittelpunkt, umrahmt von einer breiten, warm schimmernden Ringschiene.",
+      "images": [
+        {
+          "src": "assets/ring-blau-v24-2400.webp",
+          "alt": "Goldfarbener Ring mit tiefblauem Stein und seitlichem Steinbesatz auf heller Fläche",
+          "label": "Gesamtansicht",
+          "objectPosition": "50% 50%"
+        }
+      ],
+      "option": {
+        "name": "Ringgröße",
+        "values": [
+          "48",
+          "50",
+          "52",
+          "54",
+          "56",
+          "58",
+          "60"
+        ]
+      },
+      "swatch": {
+        "label": "Gelbgold",
+        "color": "#C4A45F"
+      },
+      "specs": [
+        {
+          "name": "Material",
+          "value": "Gelbgold"
+        },
+        {
+          "name": "Gestaltung",
+          "value": "Breite Ringschiene mit seitlichem Steinbesatz"
+        },
+        {
+          "name": "Steinfarbe",
+          "value": "Tiefblau"
+        },
+        {
+          "name": "Größen",
+          "value": "48 bis 60"
+        }
+      ],
+      "sourceCredits": [
+        {
+          "author": "Kuromi Lu",
+          "url": "https://unsplash.com/photos/gold-colored-and-blue-gemstone-ring-_OG-hxrBSUQ",
+          "license": "https://unsplash.com/license"
+        }
+      ],
+      "demo": true,
+      "priceLabel": "Beispielpreis",
+      "disclaimer": "Musterprodukt: Preis, Materialangaben und Auswahlmöglichkeiten sind frei gewählte Beispieldaten. Dieses Stück kann nicht bestellt werden.",
+      "primaryImage": "assets/ring-blau-v24-2400.webp",
+      "galleryHasGenuineAlternates": false,
+      "cardImage": "assets/shop-ring-blauer-stein-800.webp"
+    },
+    {
+      "id": "fv-demo-002",
+      "slug": "halo-ring",
+      "name": "Halo-Ring",
+      "category": "Ringe",
+      "priceCents": 125000,
+      "material": "Weißgold",
+      "gemstone": "Farbloser Stein",
+      "description": "Ein facettierter Mittelpunkt und ein feiner Kranz aus Licht geben diesem Ring seine klare Form.",
+      "images": [
+        {
+          "src": "assets/ring-licht-v24-2400.webp",
+          "alt": "Silberfarbener Ring mit einem facettierten farblosen Stein und umlaufendem Steinbesatz",
+          "label": "Gesamtansicht",
+          "objectPosition": "50% 50%"
+        }
+      ],
+      "option": {
+        "name": "Ringgröße",
+        "values": [
+          "48",
+          "50",
+          "52",
+          "54",
+          "56",
+          "58",
+          "60"
+        ]
+      },
+      "swatch": {
+        "label": "Weißgold",
+        "color": "#C6C8C9"
+      },
+      "specs": [
+        {
+          "name": "Material",
+          "value": "Weißgold"
+        },
+        {
+          "name": "Gestaltung",
+          "value": "Umlaufender Halo-Besatz"
+        },
+        {
+          "name": "Steinfarbe",
+          "value": "Farblos"
+        },
+        {
+          "name": "Größen",
+          "value": "48 bis 60"
+        }
+      ],
+      "sourceCredits": [
+        {
+          "author": "Sabrianna",
+          "url": "https://unsplash.com/photos/silver-diamond-studded-ring-with-blue-gemstone-CCpQ12CZ2Pc",
+          "license": "https://unsplash.com/license"
+        }
+      ],
+      "demo": true,
+      "priceLabel": "Beispielpreis",
+      "disclaimer": "Musterprodukt: Preis, Materialangaben und Auswahlmöglichkeiten sind frei gewählte Beispieldaten. Dieses Stück kann nicht bestellt werden.",
+      "primaryImage": "assets/ring-licht-v24-2400.webp",
+      "galleryHasGenuineAlternates": false,
+      "cardImage": "assets/shop-halo-ring-800.webp"
+    },
+    {
+      "id": "fv-demo-003",
+      "slug": "solitaer-ring",
+      "name": "Solitär-Ring",
+      "category": "Ringe",
+      "priceCents": 99000,
+      "material": "Gelbgold",
+      "gemstone": "Farbloser Stein",
+      "description": "Eine schlanke Ringschiene trifft auf einen rechteckig gefassten Stein und feine seitliche Akzente.",
+      "images": [
+        {
+          "src": "assets/goldring-v20-1440.webp",
+          "alt": "Goldfarbener Ring mit rechteckigem farblosem Stein, seitlichem Besatz und schlanker Ringschiene",
+          "label": "Gesamtansicht",
+          "objectPosition": "50% 50%"
+        }
+      ],
+      "option": {
+        "name": "Ringgröße",
+        "values": [
+          "48",
+          "50",
+          "52",
+          "54",
+          "56",
+          "58",
+          "60"
+        ]
+      },
+      "swatch": {
+        "label": "Gelbgold",
+        "color": "#C4A45F"
+      },
+      "specs": [
+        {
+          "name": "Material",
+          "value": "Gelbgold"
+        },
+        {
+          "name": "Gestaltung",
+          "value": "Schlanke Ringschiene mit Krappenfassung"
+        },
+        {
+          "name": "Steinfarbe",
+          "value": "Farblos"
+        },
+        {
+          "name": "Größen",
+          "value": "48 bis 60"
+        }
+      ],
+      "sourceCredits": [
+        {
+          "author": "Sabrianna",
+          "url": "https://unsplash.com/photos/gold-ring-on-white-surface-NhrcL_C0sFA",
+          "license": "https://unsplash.com/license"
+        }
+      ],
+      "demo": true,
+      "priceLabel": "Beispielpreis",
+      "disclaimer": "Musterprodukt: Preis, Materialangaben und Auswahlmöglichkeiten sind frei gewählte Beispieldaten. Dieses Stück kann nicht bestellt werden.",
+      "primaryImage": "assets/goldring-v20-1440.webp",
+      "galleryHasGenuineAlternates": false,
+      "cardImage": "assets/shop-solitaer-ring-800.webp"
+    },
+    {
+      "id": "fv-demo-004",
+      "slug": "pave-ring",
+      "name": "Pavé-Ring",
+      "category": "Ringe",
+      "priceCents": 79000,
+      "material": "Weißgold",
+      "gemstone": "Farbloser Stein",
+      "description": "Ein runder, dicht besetzter Ringkopf bündelt das Licht über einer schmalen Ringschiene.",
+      "images": [
+        {
+          "src": "assets/ring-rund-v21-1800.webp",
+          "alt": "Ring mit rundem, dicht besetztem Ringkopf und schmaler Ringschiene auf weißem Hintergrund",
+          "label": "Gesamtansicht",
+          "objectPosition": "50% 50%"
+        }
+      ],
+      "option": {
+        "name": "Ringgröße",
+        "values": [
+          "48",
+          "50",
+          "52",
+          "54",
+          "56",
+          "58",
+          "60"
+        ]
+      },
+      "swatch": {
+        "label": "Weißgold",
+        "color": "#C6C8C9"
+      },
+      "specs": [
+        {
+          "name": "Material",
+          "value": "Weißgold"
+        },
+        {
+          "name": "Gestaltung",
+          "value": "Runder Ringkopf mit Pavé-Besatz"
+        },
+        {
+          "name": "Steinfarbe",
+          "value": "Farblos"
+        },
+        {
+          "name": "Größen",
+          "value": "48 bis 60"
+        }
+      ],
+      "sourceCredits": [
+        {
+          "author": "Sabrianna",
+          "url": "https://unsplash.com/photos/silver-diamond-studded-ring-on-white-surface-JXiLc_hp9kI",
+          "license": "https://unsplash.com/license"
+        }
+      ],
+      "demo": true,
+      "priceLabel": "Beispielpreis",
+      "disclaimer": "Musterprodukt: Preis, Materialangaben und Auswahlmöglichkeiten sind frei gewählte Beispieldaten. Dieses Stück kann nicht bestellt werden.",
+      "primaryImage": "assets/ring-rund-v21-1800.webp",
+      "galleryHasGenuineAlternates": false,
+      "cardImage": "assets/shop-pave-ring-800.webp"
+    },
+    {
+      "id": "fv-demo-005",
+      "slug": "kette-blauer-anhaenger",
+      "name": "Kette mit blauem Anhänger",
+      "category": "Ketten",
+      "priceCents": 129000,
+      "material": "Weißgold",
+      "gemstone": "Blauer Stein",
+      "description": "Ein einzelner blauer Stein setzt einen ruhigen Akzent an einer feinen Gliederkette.",
+      "images": [
+        {
+          "src": "assets/saphirkette-ansicht-3.webp",
+          "alt": "Kette mit tiefblauem Anhänger in Krappenfassung auf dunklem Schiefer",
+          "label": "Ansicht von oben",
+          "objectPosition": "50% 50%"
+        },
+        {
+          "src": "assets/saphirkette-ansicht-4.webp",
+          "alt": "Seitliche Ansicht desselben blauen Anhängers und seiner Fassung",
+          "label": "Fassung von der Seite",
+          "objectPosition": "50% 50%"
+        },
+        {
+          "src": "assets/saphirkette-ansicht-5.webp",
+          "alt": "Gesamtansicht derselben Kette mit blauem Anhänger",
+          "label": "Die ganze Kette",
+          "objectPosition": "50% 50%"
+        },
+        {
+          "src": "assets/saphirkette-ansicht-2.webp",
+          "alt": "Verschluss und Glieder derselben Kette",
+          "label": "Verschluss im Detail",
+          "objectPosition": "50% 50%"
+        }
+      ],
+      "option": {
+        "name": "Kettenlänge",
+        "values": [
+          "40 cm",
+          "45 cm",
+          "50 cm"
+        ]
+      },
+      "swatch": {
+        "label": "Weißgold",
+        "color": "#C6C8C9"
+      },
+      "specs": [
+        {
+          "name": "Material",
+          "value": "Weißgold"
+        },
+        {
+          "name": "Gestaltung",
+          "value": "Einzelner Anhänger in Krappenfassung"
+        },
+        {
+          "name": "Steinfarbe",
+          "value": "Blau"
+        },
+        {
+          "name": "Längen",
+          "value": "40, 45 oder 50 cm"
+        }
+      ],
+      "sourceCredits": [
+        {
+          "author": "Feingold Vogel",
+          "url": "https://www.feingold-vogel.com/product-page/timeless-18k-gold-necklace-with-1-44ct-untreated-blue-sapphire-igi-certified",
+          "license": "Bestehendes Markenmaterial des Kunden"
+        }
+      ],
+      "demo": true,
+      "priceLabel": "Beispielpreis",
+      "disclaimer": "Musterprodukt: Preis, Materialangaben und Auswahlmöglichkeiten sind frei gewählte Beispieldaten. Dieses Stück kann nicht bestellt werden.",
+      "primaryImage": "assets/saphirkette-ansicht-3.webp",
+      "galleryHasGenuineAlternates": true,
+      "cardImage": "assets/shop-kette-blauer-anhaenger-800.webp"
+    },
+    {
+      "id": "fv-demo-006",
+      "slug": "armreif-trio",
+      "name": "Armreif-Trio",
+      "category": "Armbänder",
+      "priceCents": 89000,
+      "material": "Roségold",
+      "gemstone": "Farbloser Stein",
+      "description": "Drei feine Armreifen verbinden einen warmen Metallton mit gleichmäßig gesetzten Lichtpunkten.",
+      "images": [
+        {
+          "src": "assets/schmuck-seide-v15-1600.webp",
+          "alt": "Drei roségoldfarbene Armreifen mit Steinbesatz auf weich gefaltetem hellem Stoff",
+          "label": "Gesamtansicht",
+          "objectPosition": "35% 50%"
+        }
+      ],
+      "option": {
+        "name": "Größe",
+        "values": [
+          "S · 16 cm",
+          "M · 18 cm",
+          "L · 20 cm"
+        ]
+      },
+      "swatch": {
+        "label": "Roségold",
+        "color": "#BE927D"
+      },
+      "specs": [
+        {
+          "name": "Material",
+          "value": "Roségold"
+        },
+        {
+          "name": "Gestaltung",
+          "value": "Drei schmale Armreifen mit Steinbesatz"
+        },
+        {
+          "name": "Steinfarbe",
+          "value": "Farblos"
+        },
+        {
+          "name": "Größen",
+          "value": "S, M oder L"
+        }
+      ],
+      "sourceCredits": [
+        {
+          "author": "Castorly Stock",
+          "url": "https://www.pexels.com/photo/gold-and-diamond-jewelry-3641059/",
+          "license": "https://www.pexels.com/license/"
+        }
+      ],
+      "demo": true,
+      "priceLabel": "Beispielpreis",
+      "disclaimer": "Musterprodukt: Preis, Materialangaben und Auswahlmöglichkeiten sind frei gewählte Beispieldaten. Dieses Stück kann nicht bestellt werden.",
+      "primaryImage": "assets/schmuck-seide-v15-1600.webp",
+      "galleryHasGenuineAlternates": false,
+      "cardImage": "assets/shop-armreif-trio-800.webp"
+    }
+  ],
+  "currency": "EUR",
+  "previewNotice": "Shop-Vorschau mit Musterprodukten. Namen, Preise, Materialien und Größen dienen ausschließlich der Demonstration und sind kein Verkaufsangebot."
+}
