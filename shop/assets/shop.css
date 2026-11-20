@@ -80,3 +80,9 @@
  .section-heading h2{font-size:2.3rem}.category-gallery>a{grid-template-columns:90px 1fr;gap:17px}
  .home-products .product-card-meta{padding-inline:10px}.personal-note{display:block}.personal-note>img{margin-bottom:22px}
 }
+
+/* Shop photography: new motifs, consistent crops across all views. */
+.shop-hero>img{object-position:50% 45%}
+.category-image img,.category-image-necklace img,.product-card-image img.image-kette-blauer-anhaenger,.gallery-main>img.image-armreif-trio{object-position:50% 50%}
+.personal-note>div{border-left:0;padding-left:0}
+@media(max-width:700px){.shop-hero>img{object-position:55% 40%}.personal-note>div{padding-left:0}}

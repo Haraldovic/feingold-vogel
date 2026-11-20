@@ -1,0 +1,80 @@
+[
+  {
+    "use": "Ring mit blauem Stein",
+    "files": [
+      "shop/assets/photos/blue-ring-1600.webp",
+      "shop/assets/photos/blue-ring-800.webp"
+    ],
+    "author": "Kartik Malviya",
+    "url": "https://www.pexels.com/photo/elegant-silver-ring-with-sapphire-gemstone-32806535/",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "use": "Halo-Ring",
+    "files": [
+      "shop/assets/photos/halo-ring-1600.webp",
+      "shop/assets/photos/halo-ring-800.webp"
+    ],
+    "author": "The Glorious Studio",
+    "url": "https://www.pexels.com/photo/close-up-shot-of-gold-and-silver-diamond-ring-on-white-surface-9420321/",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "use": "Solitär-Ring",
+    "files": [
+      "shop/assets/photos/solitaire-ring-1600.webp",
+      "shop/assets/photos/solitaire-ring-800.webp"
+    ],
+    "author": "The Glorious Studio",
+    "url": "https://www.pexels.com/photo/close-up-shot-of-a-diamond-ring-on-white-surface-14466162/",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "use": "Pavé-Ring",
+    "files": [
+      "shop/assets/photos/pave-ring-1600.webp",
+      "shop/assets/photos/pave-ring-800.webp"
+    ],
+    "author": "The Glorious Studio",
+    "url": "https://www.pexels.com/photo/diamond-ring-on-white-surface-10475791/",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "use": "Kette mit Tropfenanhänger",
+    "files": [
+      "shop/assets/photos/teardrop-necklace-1600.webp",
+      "shop/assets/photos/teardrop-necklace-800.webp"
+    ],
+    "author": "MudaSsir BhaTti",
+    "url": "https://www.pexels.com/photo/a-necklace-with-diamonds-7134460/",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "use": "Geflochtener Armreif",
+    "files": [
+      "shop/assets/photos/woven-bangle-1600.webp",
+      "shop/assets/photos/woven-bangle-800.webp"
+    ],
+    "author": "Kader D. Kahraman",
+    "url": "https://www.pexels.com/photo/gold-bracelet-on-a-white-surface-10557316/",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "use": "Shop-Einstieg",
+    "files": [
+      "shop/assets/photos/shop-jewelry-hands.webp"
+    ],
+    "author": "PNW Production",
+    "url": "https://www.pexels.com/photo/woman-wearing-rings-9218400/",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "use": "Schmuck im Detail",
+    "files": [
+      "shop/assets/photos/ring-on-suede.webp"
+    ],
+    "author": "Arne Bogaerts",
+    "url": "https://www.pexels.com/photo/gold-ring-with-sapphire-and-diamond-stones-14058109/",
+    "license": "https://www.pexels.com/license/"
+  }
+]
